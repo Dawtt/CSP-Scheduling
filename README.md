@@ -21,7 +21,7 @@ The specific problem addressed here is putting together a 4 year schedule of cou
 - different courses have different availability at different semesters (spring vs. fall).
 
 
-The problem set is large enough that there is approximately  1.712e+36  possible different sets of variable values, a very small perecentage of which fulfill the constraint requirements of the default constraint.txt input file.
+The problem set is large enough that there is approximately  1.712e+36  possible different sets of variable values, a very small perecentage of which fulfill the constraint requirements of the default constraint.txt input file. Running pure Random Sampling, just creating a random value set for every variable and seeing if it satisfies the constraint requirements, did not produce a solution with less than 10 constraint violations over 100 million iterations.
 
 
 Running the algorithm with two-stage choice, and without random selection or just without random restart, will  show observable local minimums of value sets the algorithm becomes stuck in and unable to produce any further optimization. With default input files these local minimums commonly occur at around 8-20 constraint violations.
