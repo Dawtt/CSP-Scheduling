@@ -7,13 +7,13 @@ Use Driver class to run.
 
 Basic Construction of Algorithm:
 ----------------------------------
-Random Initialization: Create a random schedule.
+	Random Initialization: Create a random schedule.
 
-	Two-Stage Choice: for highest conflict variable, choose value with lowest conflicts. Repeat.
-	
-		Random Selection: if highest conflict variable is in tabu list, choose a random variable instead for most improving.
-		
-			Random Restart: If get the same number of conflicts X times, start the search over at a new random schedule.
+		Two-Stage Choice: for highest conflict variable, choose value with lowest conflicts. Repeat.
+
+			Random Selection: if highest conflict variable is in tabu list, choose a random variable instead for most improving.
+
+				Random Restart: If get the same number of conflicts X times, start the search over at a new random schedule.
 ----------------------------------
 
 This program uses different methods built on random selection of a given domain of values for variables, in order to find a set of values which satisfy constraints on them.
